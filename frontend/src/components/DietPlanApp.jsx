@@ -53,6 +53,7 @@ const DietPlanApp = () => {
               placeholder="e.g., Vegan, Gluten-free"
               value={preferences}
               onChange={(e) => setPreferences(e.target.value)}
+              required
             />
           </div>
 
@@ -64,6 +65,7 @@ const DietPlanApp = () => {
               placeholder="e.g., Diabetes, High BP"
               value={healthIssues}
               onChange={(e) => setHealthIssues(e.target.value)}
+              required
             />
           </div>
 
@@ -73,6 +75,7 @@ const DietPlanApp = () => {
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               value={activityLevel}
               onChange={(e) => setActivityLevel(e.target.value)}
+              required
             >
               <option value="">Select</option>
               <option value="Sedentary">Sedentary</option>
@@ -89,6 +92,7 @@ const DietPlanApp = () => {
               placeholder="e.g., Weight loss, Muscle gain, Balanced diet"
               value={goals}
               onChange={(e) => setGoals(e.target.value)}
+              required
             />
           </div>
 
