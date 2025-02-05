@@ -2,7 +2,6 @@
 import { useState } from "react";
 import axios from "axios";
 import { Loader, Clipboard, Check } from "lucide-react";
-import dotenv from "dotenv";
 
 
 const DietPlanApp = () => {
@@ -21,7 +20,7 @@ const DietPlanApp = () => {
     setCopied(false);
 
     try {
-      const response = await axios.post("${process.env.VITE_REACT_BACKENDURL}/api/diet-plan", {
+      const response = await axios.post("${import.meta.env.VITE_REACT_BACKENDURL}/api/diet-plan", {
         preferences,
         healthIssues,
         activityLevel,
